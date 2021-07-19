@@ -17,3 +17,15 @@ Unity demo with protobuf
 * download release `protoc-3.17.3-win32.zip`
 * "protoc.exe" and "include" should be in same level directory. beacuse we gona `import "google/protobuf/timestamp.proto";`
 * run `proto_compile.bat` and generate `.cs` files
+
+# Reference
+
+[Unity C# 编译集成 Google Protobuf](https://john.js.org/2020/11/17/CSharp-Compile-With-Google-Protobuf/)
+
+[Protocol Buffer Basics: C#](https://developers.google.com/protocol-buffers/docs/csharptutorial)
+
+[addressbook.proto](https://github.com/protocolbuffers/protobuf/blob/master/examples/addressbook.proto)
+
+[Protocol Buffers v3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3)
+
+[C# Generated Code](https://developers.google.com/protocol-buffers/docs/reference/csharp-generated)
