@@ -29,3 +29,5 @@ Unity demo with protobuf
 [Protocol Buffers v3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3)
 
 [C# Generated Code](https://developers.google.com/protocol-buffers/docs/reference/csharp-generated)
+
+[C# README.md](https://github.com/protocolbuffers/protobuf/tree/master/csharp)
