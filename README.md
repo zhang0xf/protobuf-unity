@@ -4,8 +4,8 @@ Unity demo with protobuf
 
 ## Version
 
-protoc-3.17.3-win32.zip
-protobuf-csharp-3.17.3.tar.gz
+* protoc-3.17.3-win32.zip
+* protobuf-csharp-3.17.3.tar.gz
 
 ## Build `DLL` for unity on WIN
 
