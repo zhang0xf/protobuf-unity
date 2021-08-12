@@ -20,8 +20,8 @@ public class ExampleTest : MonoBehaviour
             Phones = { new Person.Types.PhoneNumber { Number = "555-1212" } }
         };
 
-        // using 语句定义一个范围，在此范围的末尾将释放对象
-        // 该对象必须继承IDisposable()接口
+        // using 璇彞瀹氫箟涓�涓寖鍥达紝鍦ㄦ鑼冨洿鐨勬湯灏惧皢閲婃斁瀵硅薄
+        // 璇ュ璞″繀椤荤户鎵縄Disposable()鎺ュ彛
         using (MemoryStream stream = new MemoryStream())
         {
             // Save the person to a stream
@@ -29,18 +29,18 @@ public class ExampleTest : MonoBehaviour
             bytes = stream.ToArray();
         }
 
-        // 写入文件
+        // 鍐欏叆鏂囦欢
         using (var file = File.Create("Assets/Resources/Person.dat"))
         {
             person.WriteTo(file);
         }
 
-        // 读取文件
+        // 璇诲彇鏂囦欢
         using (var file = File.OpenRead("Assets/Resources/Person.dat"))
         {
             Person person1 = Person.Parser.ParseFrom(file);
 
-            // 打印信息
+            // 鎵撳嵃淇℃伅
             Debug.LogFormat("ID = {0}", person1.Id);
             Debug.LogFormat("Name = {0}", person1.Name);
             Debug.Log("-------------------------");
